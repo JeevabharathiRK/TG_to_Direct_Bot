@@ -1,0 +1,19 @@
+{
+    "name": "TG_to_Direct_Bot",
+    "description": "Bot to provide links of different types of files you send.",
+    "website": "https://telegram.me/Raj_Bots",
+    "repository": "https://github.com/Sadew451/FileToLink",
+    "env": {
+          "TG_BOT_TOKEN": {"description": "Your Bot's Token From BotFather Bot","required": true}
+    },
+    "buildpacks": [
+      {"url": "heroku/python"}
+    ],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "stack": "heroku-20"
+  }
